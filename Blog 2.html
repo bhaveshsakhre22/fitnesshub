@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paragon Fitness - Personal Training & Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-text h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .logo-text span {
+      font-size: 12px;
+      color: gray;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover {
+      color: #e53935;
+    }
+
+    .main-nav a.active {
+      color: #e53935;
+    }
+
+    .btn-enroll {
+      background-color: #e53935;
+      color: white !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-enroll:hover {
+      background-color: #c62828;
+    }
+
+    /* Hero Section */
+    .fullscreen-banner {
+      background-image: url("gym-background-tx75r0rf0t7gtpke.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .fullscreen-banner h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .fullscreen-banner p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .btn-dark {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn-red {
+      background: #ff3b3f;
+      color: #fff;
+      border: none;
+    }
+
+    /* Fitness Services Section */
+    .fitness-services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 30px 20px;
+      text-align: center;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card .icon {
+      font-size: 40px;
+      color: #e53935;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .fullscreen-banner h1 {
+        font-size: 2rem;
+      }
+
+      .fullscreen-banner p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+     <div class="nav-bar">
+  <div class="logo-area">
+    <img src="Screenshot 2025-07-16 015854.png" alt="Fitness Hub Logo" style="height: 50px; width: auto;">
+    <div class="logo-text">
+          <h2></h2>
+         
+        </div>
+      </div>
+       <nav class="main-nav">
+        <a href="HOME.html" class="active">Home</a>
+          <a href="fitness classes.html">Classes</a>
+           <a href="Trainers.html">Trainers</a>
+        <a href="contact info.html">Contact</a>
+            <a href="about us fitness.html">About Us</a>
+            <a href="trainer login.html" class="btn-enroll">Trainer LOgin</a>
+       
+      </nav>
+    </div>
+  </header>
+
+
+
+<section id="stretching-routines" style="max-width:900px;margin:80px auto;padding:20px;font-family:'Segoe UI',sans-serif;line-height:1.8;color:#2c3e50;background:#fff;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.05);">
+  <h1 style="text-align:center;font-size:2.5rem;color:#e53935;margin-bottom:40px;">
+    Stretching Routines That Actually Work 🧘
+  </h1>
+
+  <div style="margin-bottom:30px;">
+    <h2 style="color:#1e88e5;font-size:1.5rem;margin-bottom:10px;">1. Dynamic Warm-Up (Pre-Workout)</h2>
+    <p><strong>What:</strong> Leg swings, arm circles, hip openers—active movements that prep your muscles and joints.</p>
+    <p><strong>Why:</strong> Boosts blood flow, primes your nervous system, and reduces injury risk.</p>
+    <p><strong>How:</strong> Move through each for 30–45 seconds before training.</p>
+  </div>
+
+  <div style="margin-bottom:30px;">
+    <h2 style="color:#1e88e5;font-size:1.5rem;margin-bottom:10px;">2. Post-Workout Static Stretch</h2>
+    <p><strong>What:</strong> Hold stretches for major muscle groups (hamstrings, quads, chest, back).</p>
+    <p><strong>Why:</strong> Helps reset muscle length, improve flexibility, and reduce soreness.</p>
+    <p><strong>How:</strong> Hold each stretch for 20–30 seconds—repeat 2–3 rounds.</p>
+  </div>
+
+  <div style="margin-bottom:30px;">
+    <h2 style="color:#1e88e5;font-size:1.5rem;margin-bottom:10px;">3. Active Isolated Stretching (AIS)</h2>
+    <p><strong>What:</strong> Use a rope or band to stretch each muscle for 2 seconds, release, repeat 8–10 reps.</p>
+    <p><strong>Why:</strong> Lengthens fascia and improves range of motion without activating stretch reflex.</p>
+    <p><strong>How:</strong> Perform AIS for hips, shoulders, chest—2–3x per muscle group post-workout or on rest days.</p>
+  </div>
+
+  <div style="margin-bottom:30px;">
+    <h2 style="color:#1e88e5;font-size:1.5rem;margin-bottom:10px;">4. PNF Stretching</h2>
+    <p><strong>What:</strong> Contract–relax method: push your muscle, then relax deeper into the stretch.</p>
+    <p><strong>Why:</strong> Quickly recruits neuromuscular response to improve flexibility.</p>
+    <p><strong>How:</strong> Engage muscle for 5 sec, relax & stretch for 15 sec—repeat 3–4 times per muscle.</p>
+  </div>
+
+  <div style="margin-bottom:30px;">
+    <h2 style="color:#1e88e5;font-size:1.5rem;margin-bottom:10px;">5. Daily Mobility Flow</h2>
+    <p><strong>What:</strong> A short routine with foam rolling and joint mobility (e.g., ankle-to-hip transitions, thoracic twists).</p>
+    <p><strong>Why:</strong> Maintains rigidity, relieves tension from long sitting, and supports daily function.</p>
+    <p><strong>How:</strong> Spend 5–10 minutes in the morning or evening moving through this routine.</p>
+  </div>
+
+  <div style="background:#e8f5e9;padding:20px;border-radius:10px;color:#2e7d32;font-size:1rem;">
+    <h3>💡 Pro Tip:</h3>
+    <p>Consistency beats stretch length—daily routine, even short, beats one-off marathon sessions. And don’t forget to combine mobility with strength and proper foam rolling techniques.</p>
+  </div>
+</section>
+
+</body>
+</html>
+<footer style="background-color: #0d0e0f; color: #fff; padding: 30px 0; text-align: center; font-family: 'Segoe UI', sans-serif;">
+  <p style="margin: 0 0 10px;">&copy; 2025 Paragon Fitness. All rights reserved.</p>
+  <p style="margin: 0;">
+    <a href="#" class="footer-link">Facebook</a> |
+    <a href="#" class="footer-link">Instagram</a> |
+    <a href="#" class="footer-link">YouTube</a>
+  </p>
+  <style>
+    .footer-link {
+      color: #fdd835;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</footer>
+
+

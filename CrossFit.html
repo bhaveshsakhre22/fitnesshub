@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CrossFit Workout - Paragon Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #d84315;
+    }
+
+    .btn-enroll {
+      background-color: #d84315;
+      color: white !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-enroll:hover {
+      background-color: #bf360c;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      line-height: 1.8;
+    }
+
+    section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #d84315;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #d84315;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tip-box {
+      background: #fbe9e7;
+      border-radius: 10px;
+      padding: 20px;
+      color: #bf360c;
+      font-size: 1rem;
+    }
+
+    .tip-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #0d0e0f;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      margin-top: 60px;
+    }
+
+    .footer-link {
+      color: #fdd835;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      section h1 {
+        font-size: 2rem;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="nav-bar">
+    <div class="logo-area">
+      <img src="Screenshot 2025-07-16 015854.png" alt="Paragon Fitness Logo" />
+    </div>
+    <nav class="main-nav">
+      <a href="HOME.html">Home</a>
+      <a href="fitness classes.html">Classes</a>
+      <a href="Trainers.html">Trainers</a>
+      <a href="contact info.html">Contact</a>
+      <a href="about us fitness.html">About Us</a>
+      <a href="trainer login.html" class="btn-enroll">Trainer Login</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CrossFit Section -->
+<section>
+  <h1>CrossFit Workout Blast 💥</h1>
+
+  <!-- Video Embed -->
+  <iframe 
+    src="https://www.youtube.com/embed/mlVrkiCoKkg" 
+    title="CrossFit Full Body Workout" 
+    allowfullscreen>
+  </iframe>
+
+  <h2>What is CrossFit?</h2>
+  <p>CrossFit is a high-intensity fitness program that combines elements of weightlifting, cardio, and functional movements to build strength, endurance, and overall athleticism.</p>
+
+  <h2>Benefits of CrossFit</h2>
+  <ul>
+    <li><strong>Builds Total Body Strength:</strong> Uses compound lifts and bodyweight exercises</li>
+    <li><strong>Boosts Cardiovascular Endurance:</strong> Intense circuits push your limits</li>
+    <li><strong>Increases Mental Toughness:</strong> Workouts challenge both body and mind</li>
+  </ul>
+
+  <h2>Sample CrossFit WOD (Workout of the Day)</h2>
+  <ul>
+    <li>10 Burpees</li>
+    <li>15 Kettlebell Swings</li>
+    <li>20 Box Jumps</li>
+    <li>15 Push-Ups</li>
+    <li>10 Pull-Ups</li>
+    <li>Repeat for 3 Rounds</li>
+  </ul>
+
+  <div class="tip-box">
+    <h3>🔥 Trainer Tip:</h3>
+    <p>Warm up thoroughly and scale workouts to your level. Focus on form before speed — intensity will come with time.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Paragon Fitness. All rights reserved.</p>
+  <p>
+    <a href="#" class="footer-link">Facebook</a> |
+    <a href="#" class="footer-link">Instagram</a> |
+    <a href="#" class="footer-link">YouTube</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paragon Fitness - Trainers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #e53935;
+    }
+
+    .btn-enroll {
+      background-color: #e53935;
+      color: white !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-enroll:hover {
+      background-color: #c62828;
+    }
+
+    /* Hero Section */
+    .fullscreen-banner {
+      background-image: url("coach.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    /* Trainer Section */
+    .trainer-section {
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+
+    .trainer-section h2 {
+      text-align: center;
+      color: #e53935;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .trainer-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .trainer-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+
+    .trainer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .trainer-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .trainer-card h3 {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .trainer-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 8px 0;
+    }
+
+    @media (max-width: 768px) {
+      .trainer-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .trainer-card {
+        width: 90%;
+      }
+    }
+
+    .footer-link {
+      color: #fdd835;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-bar">
+      <div class="logo-area">
+        <img src="Screenshot 2025-07-16 015854.png" alt="Fitness Hub Logo">
+      </div>
+      <nav class="main-nav">
+        <a href="HOME.html">Home</a>
+          <a href="fitness classes.html">Classes</a>
+           <a href="Trainers.html"class="active">Trainers</a>
+        <a href="contact info.html">Contact</a>
+            <a href="about us fitness.html">About Us</a>
+                 <a href="trainer login.html" class="btn-enroll">Trainer LOgin</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Banner Section -->
+  <div class="fullscreen-banner">
+    <h1>Meet Our Trainers</h1>
+  </div>
+
+  <!-- Trainer Section -->
+  <section class="trainer-section">
+    <h2></h2>
+    <div class="trainer-cards">
+
+      <!-- Trainer 1 -->
+      <div class="trainer-card">
+        <img src="personal-trainer-keerthi.webp" alt="Alex Carter">
+        <h3>Alex Carter</h3>
+        <p>Specialist in Strength Training</p>
+        <p><strong>Contact:</strong> +1 555-234-9876</p>
+      </div>
+
+      <!-- Trainer 2 -->
+      <div class="trainer-card">
+        <img src="istockphoto-856797530-612x612.jpg" alt="Maria Lopez">
+        <h3>Maria Lopez</h3>
+        <p>Yoga & Mindfulness Coach</p>
+        <p><strong>Contact:</strong> +1 555-876-5432</p>
+      </div>
+
+      <!-- Trainer 3 -->
+      <div class="trainer-card">
+        <img src="how-it-works-issa-certified-personal-trainer.webp" alt="Jamal Turner">
+        <h3>Jamal Turner</h3>
+        <p>Certified CrossFit Expert</p>
+        <p><strong>Contact:</strong> +1 555-112-3344</p>
+      </div>
+
+      <!-- Trainer 4 -->
+      <div class="trainer-card">
+        <img src="young-female-fitness-personal-trainer-with-notepad-standing-gym-with-thumb-up_146671-31568.avif" alt="Lisa Ray">
+        <h3>Lisa Ray</h3>
+        <p>HIIT & Cardio Instructor</p>
+        <p><strong>Contact:</strong> +1 555-334-1212</p>
+      </div>
+
+      <!-- Trainer 5 -->
+      <div class="trainer-card">
+        <img src="fitness-muscle-portrait--face-280201942.webp" alt="Daniel Kim">
+        <h3>Daniel Kim</h3>
+        <p>Bodybuilding Coach</p>
+        <p><strong>Contact:</strong> +1 555-992-8877</p>
+      </div>
+
+      <!-- Trainer 8 -->
+      <div class="trainer-card">
+        <img src="BenefitsOfStrengthTrainingForWomencdc853cb74a233646df40500d0cf977b.jpg" alt="Priya Singh">
+        <h3>Priya Singh</h3>
+        <p>Functional Training Specialist</p>
+        <p><strong>Contact:</strong> +1 555-721-9988</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #0d0e0f; color: #fff; padding: 30px 0; text-align: center;">
+    <p style="margin: 0 0 10px;">&copy; 2025 Paragon Fitness. All rights reserved.</p>
+    <p style="margin: 0;">
+      <a href="#" class="footer-link">Facebook</a> |
+      <a href="#" class="footer-link">Instagram</a> |
+      <a href="#" class="footer-link">YouTube</a

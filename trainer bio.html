@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Paragon Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #e53935;
+    }
+
+    .btn-enroll {
+      background-color: #e53935;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn-enroll:hover {
+      background-color: #c62828;
+    }
+
+    /* Hero Section */
+    .fullscreen-banner {
+      background-image: url("360_F_102528344_XfIuLtPSSBIIR3NYtLRe1QOBUgkdS8Cp.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .about-section h2 {
+      color: #e53935;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .about-section p,
+    .about-section ul {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    /* Trainer Bio Section */
+    .trainer-bio {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .trainer-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .trainer-name {
+      font-size: 24px;
+      color: #e53935;
+      margin-bottom: 5px;
+    }
+
+    .trainer-title {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .trainer-bio-text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .trainer-video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .trainer-contact {
+      font-size: 15px;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .trainer-contact a {
+      color: #e53935;
+      text-decoration: none;
+    }
+
+    .trainer-contact a:hover {
+      text-decoration: underline;
+    }
+
+    .trainer-website {
+      display: inline-block;
+      margin-top: 25px;
+      background: #e53935;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .trainer-website:hover {
+      background: #c62828;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #1e1e1e;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .footer-col a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .footer-bottom .social-icons a img {
+      width: 24px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .trainer-video {
+        width: 100%;
+      }
+
+      .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-col {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="nav-bar">
+    <div class="logo-area">
+      <img src="Screenshot 2025-07-16 015854.png" alt="Fitness Hub Logo">
+    </div>
+    <nav class="main-nav">
+      <a href="HOME.html">Home</a>
+      <a href="fitness classes.html">Classes</a>
+      <a href="Trainers.html">Trainers</a>
+      <a href="contact info.html">Contact</a>
+      <a href="about us fitness.html" class="active">About Us</a>
+      <a href="trainer login.html" class="btn-enroll">Trainer Login</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Trainer Bio Section -->
+<div class="trainer-bio">
+  <img src="https://example.com/images/trainer.jpg" alt="Trainer Photo" class="trainer-photo">
+  <h2 class="trainer-name">Alex Carter</h2>
+  <p class="trainer-title">Certified Strength & Conditioning Coach</p>
+
+  <p class="trainer-bio-text">
+    Alex is a certified personal trainer with over 10 years of experience helping clients transform their health and fitness. Specializing in weight loss, muscle gain, and online coaching, Alex believes in sustainable results through proper form and personalized programming.
+  </p>
+
+  <video class="trainer-video" controls>
+    <source src="https://example.com/videos/workout.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="trainer-contact">
+    <p><strong>📍 Location:</strong> Austin, Texas</p>
+    <p><strong>📧 Email:</strong> <a href="mailto:alex@alexcarterfitness.com">alex@alexcarterfitness.com</a></p>
+    <p><strong>📱 Instagram:</strong> <a href="https://instagram.com/alexcarter.fit" target="_blank">@alexcarter.fit</a></p>
+  </div>
+
+  <a href="https://www.alexcarterfitness.com" target="_blank" class="trainer-website">Visit My Website</a>
+</div>
+
+</body>
+</html>

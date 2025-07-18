@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yoga Flow - Paragon Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #43a047;
+    }
+
+    .btn-enroll {
+      background-color: #43a047;
+      color: white !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-enroll:hover {
+      background-color: #2e7d32;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      line-height: 1.8;
+    }
+
+    section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #43a047;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #43a047;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tip-box {
+      background: #e8f5e9;
+      border-radius: 10px;
+      padding: 20px;
+      color: #2e7d32;
+      font-size: 1rem;
+    }
+
+    .tip-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #0d0e0f;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      margin-top: 60px;
+    }
+
+    .footer-link {
+      color: #fdd835;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      section h1 {
+        font-size: 2rem;
+      }
+
+      iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="nav-bar">
+    <div class="logo-area">
+      <img src="Screenshot 2025-07-16 015854.png" alt="Paragon Fitness Logo" />
+    </div>
+    <nav class="main-nav">
+      <a href="HOME.html">Home</a>
+      <a href="fitness classes.html">Classes</a>
+      <a href="Trainers.html">Trainers</a>
+      <a href="contact info.html">Contact</a>
+      <a href="about us fitness.html">About Us</a>
+      <a href="trainer login.html" class="btn-enroll">Trainer Login</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Yoga Section -->
+<section>
+  <h1>Yoga Flow Session 🧘</h1>
+
+  <!-- Video Embed -->
+  <iframe 
+    src="https://www.youtube.com/embed/v7AYKMP6rOE" 
+    title="Morning Yoga for Beginners" 
+    allowfullscreen>
+  </iframe>
+
+  <h2>What is Yoga?</h2>
+  <p>Yoga is an ancient practice that connects the mind, body, and breath through physical postures, breathing techniques, and meditation. It's ideal for reducing stress and improving overall well-being.</p>
+
+  <h2>Benefits of Yoga</h2>
+  <ul>
+    <li><strong>Increases Flexibility:</strong> Lengthens muscles and joints</li>
+    <li><strong>Improves Posture:</strong> Strengthens the spine and core alignment</li>
+    <li><strong>Boosts Mental Clarity:</strong> Calms the mind and improves focus</li>
+  </ul>
+
+  <h2>Basic Yoga Poses</h2>
+  <ul>
+    <li>Mountain Pose (Tadasana)</li>
+    <li>Downward Dog (Adho Mukha Svanasana)</li>
+    <li>Warrior I & II</li>
+    <li>Child’s Pose</li>
+    <li>Savasana (Corpse Pose)</li>
+  </ul>
+
+  <div class="tip-box">
+    <h3>🌿 Mindful Tip:</h3>
+    <p>Move slowly, breathe deeply, and listen to your body. Yoga is about inner balance as much as physical strength.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Paragon Fitness. All rights reserved.</p>
+  <p>
+    <a href="#" class="footer-link">Facebook</a> |
+    <a href="#" class="footer-link">Instagram</a> |
+    <a href="#" class="footer-link">YouTube</a>
+  </p>
+</footer>
+
+</body>
+</html>

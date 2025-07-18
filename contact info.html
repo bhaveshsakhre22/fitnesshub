@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Paragon Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #e53935;
+    }
+
+    .btn-enroll {
+      background-color: #e53935;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn-enroll:hover {
+      background-color: #c62828;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      max-width: 600px;
+      margin: 60px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #e53935;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+    }
+
+    .contact-form button:hover {
+      background-color: #218838;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #1e1e1e;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .footer-col a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .footer-bottom .social-icons a img {
+      width: 24px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-col {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="nav-bar">
+    <div class="logo-area">
+      <img src="Screenshot 2025-07-16 015854.png" alt="Paragon Fitness Logo">
+    </div>
+    <nav class="main-nav">
+        <a href="HOME.html" >Home</a>
+          <a href="fitness classes.html">Classes</a>
+           <a href="Trainers.html">Trainers</a>
+        <a href="contact info.html"class="active">Contact</a>
+            <a href="about us fitness.html">About Us</a>
+                <a href="trainer login.html" class="btn-enroll">Trainer LOgin</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Contact Form Section -->
+<section class="contact-form">
+  <h2>Contact Us</h2>
+  <form action="/submit" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- NEW: Office Hours -->
+<section style="max-width: 600px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <h3 style="color: #e53935;">Office Hours</h3>
+  <ul style="list-style: none; padding-left: 0; font-size: 16px;">
+    <li><strong>Monday – Friday:</strong> 6:00 AM – 10:00 PM</li>
+    <li><strong>Saturday:</strong> 8:00 AM – 8:00 PM</li>
+    <li><strong>Sunday:</strong> 10:00 AM – 6:00 PM</li>
+  </ul>
+</section>
+
+<!-- NEW: Google Map Embed -->
+<section style="max-width: 1000px; margin: 40px auto; text-align: center;">
+  <h3 style="color: #e53935;">Our Location</h3>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086828111807!2d-122.42005078468136!3d37.77851937975862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e2b5b0b7c65%3A0x7b7a9b38722b5e9e!2sGym!5e0!3m2!1sen!2sus!4v1600000000000"
+    width="100%" 
+    height="400" 
+    style="border:0; border-radius: 8px;" 
+    allowfullscreen="" 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="about us fitness.html">About</a>
+      <a href="#">News</a>
+      <a href="#">Membership</a>
+      <a href="#">Privacy</a>
+
+      <a href="fitness classes.html">Classes</a>
+      <a href="Trainers.html">Trainers</a>
+      <a href="#">Nutrition</a>
+      <a href="#">Programs</a>
+    </div>
+
+     
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>Email: info@paragonfitness.com</p>
+      <p>Phone: +1 234 567 8901</p>
+      <p>Address: 123 Fitness Ave, Gym City</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Paragon Fitness. All rights reserved.</p>
+    <div class="social-icons">
+     
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

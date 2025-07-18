@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Hub – Expert Classes & Personal Training</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-text h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #e53935;
+    }
+
+    .btn-enroll {
+      background-color: #e53935;
+      color: white !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-enroll:hover {
+      background-color: #c62828;
+    }
+
+    .fullscreen-banner {
+      background-image: url("9c2e6630372096f737be14a4b83cf6f6.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .promo-section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .promo-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .services-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .services-list li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .call-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .call-box p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .call-box .phone {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .fitness-classes {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .fitness-classes h2 {
+      font-size: 2.2rem;
+      color: #e53935;
+      margin-bottom: 40px;
+    }
+
+    .class-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .class-card {
+      background-color: #fff;
+      border: 1px solid #171616;
+      border-radius: 10px;
+      width: 260px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .class-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .class-card h3 {
+      font-size: 20px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .class-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .fullscreen-banner h1 {
+        font-size: 2rem;
+      }
+
+      .promo-text h1 {
+        font-size: 2rem;
+      }
+
+      .class-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-bar">
+      <div class="logo-area">
+        <img src="Screenshot 2025-07-16 015854.png" alt="Fitness Hub Logo">
+        <div class="logo-text">
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="HOME.html">Home</a>
+          <a href="fitness classes.html"class="active">Classes</a>
+           <a href="Trainers.html">Trainers</a>
+        <a href="contact info.html">Contact</a>
+            <a href="about us fitness.html">About Us</a>
+                  <a href="trainer login.html" class="btn-enroll">Trainer LOgin</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="fullscreen-banner">
+    <section class="promo-section">
+      <div class="promo-text">
+        <h1><span>FITNESS YOUR</span> BODY</h1>
+        <ul class="services-list">
+          <li>One-on-One Personal Coaching</li>
+          <li>High-Intensity Group Workouts</li>
+          <li>State-of-the-Art Cardio Machines</li>
+          <li>Advanced Strength Training Zones</li>
+          <li>Customized Meal Planning</li>
+          <li>Progress Tracking & Health Reports</li>
+          <li>Mindfulness, Yoga & Recovery Sessions</li>
+          <li>Professional Massage & Relaxation</li>
+          <li>Steam, Sauna & Detox Therapy</li>
+          <li>Sport-Specific Conditioning Plans</li>
+        </ul>
+        <div class="call-box">
+          <p>Call for more:</p>
+          <p class="phone">00 0123 4565 789</p>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Fitness Classes -->
+  <section class="fitness-classes">
+    <h2>Our Popular Classes</h2>
+    <div class="class-grid">
+      <div class="class-card">
+        <h3>HIIT Training</h3>
+        <p>Quick, explosive workouts that burn calories fast and improve endurance in less time.</p>
+          <a href="HIIT.html" style="color: #e53935; text-decoration: none; font-weight: bold;">JOIN →</a>
+      </div>
+      <div class="class-card">
+        <h3>Yoga Flow</h3>
+        <p>Focus on flexibility, mindfulness, and inner peace with calming, instructor-led yoga classes.</p>
+          <a href="yoga flow.html" style="color: #e53935; text-decoration: none; font-weight: bold;">JOIN →</a>
+      </div>
+      <div class="class-card">
+        <h3>CrossFit</h3>
+        <p>High-intensity strength and conditioning workouts built to test your limits and results.</p>
+          <a href="CrossFit.html" style="color: #e53935; text-decoration: none; font-weight: bold;">JOIN →</a>
+      </div>
+      <div class="class-card">
+        <h3>Pilates</h3>
+        <p>Core-focused strength sessions that promote control, stability, and posture alignment.</p>
+          <a href="Pilates.html" style="color: #e53935; text-decoration: none; font-weight: bold;">JOIN →</a>
+      </div>
+      
+        
+
+  </div>
+</section>
+<footer style="background-color: #01060b; color: #fff; padding: 30px 0; text-align: center; font-family: 'Segoe UI', sans-serif;">
+  <p style="margin: 0 0 10px;">&copy; 2025 Paragon Fitness. All rights reserved.</p>
+  <p style="margin: 0;">
+    <a href="#" class="footer-link">Facebook</a> |
+    <a href="#" class="footer-link">Instagram</a> |
+    <a href="#" class="footer-link">YouTube</a>
+  </p>
+  <style>
+    .footer-link {
+      color: #fdd835;
+      text-decoration: none;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</footer>
+
+
+
+ 
+
+</body>
+</html>

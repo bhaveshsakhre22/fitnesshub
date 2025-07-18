@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Paragon Fitness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-area img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c3e50;
+      transition: color 0.3s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #e53935;
+    }
+
+    .btn-enroll {
+      background-color: #e53935;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn-enroll:hover {
+      background-color: #c62828;
+    }
+
+    /* Hero Section */
+    .fullscreen-banner {
+      background-image: url("360_F_102528344_XfIuLtPSSBIIR3NYtLRe1QOBUgkdS8Cp.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .about-section h2 {
+      color: #e53935;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .about-section p,
+    .about-section ul {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .about-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-section li {
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .stat {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      width: 200px;
+      margin: 10px;
+    }
+
+    .stat h3 {
+      color: #e53935;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .stat p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #1e1e1e;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 80px;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .footer-col a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .footer-bottom .social-icons a img {
+      width: 24px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-col {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="nav-bar">
+    <div class="logo-area">
+      <img src="Screenshot 2025-07-16 015854.png" alt="Fitness Hub Logo">
+    </div>
+    <nav class="main-nav">
+        <a href="HOME.html">Home</a>
+          <a href="fitness classes.html">Classes</a>
+           <a href="Trainers.html">Trainers</a>
+        <a href="contact info.html">Contact</a>
+            <a href="about us fitness.html"class="active">About Us</a>
+                  <a href="trainer login.html" class="btn-enroll">Trainer LOgin</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Banner -->
+<div class="fullscreen-banner">
+  <h1>WELCOME TO ABOUT US </h1>
+</div>
+
+<!-- About Section -->
+<section class="about-section">
+  <h2>Our Mission</h2>
+  <p>
+    At Paragon Fitness, we believe that fitness is not just about lifting weights — it's about building confidence, discipline, and a lifestyle. Our goal is to empower individuals of all fitness levels to become the strongest version of themselves through science-backed programs, expert coaching, and a supportive community.
+  </p>
+
+  <h2>Who We Are</h2>
+  <p>
+    Founded in 2020, Paragon Fitness has grown into a trusted name in personal training and group fitness. With a team of certified professionals, we provide personalized coaching, nutrition guidance, and motivational support in a state-of-the-art environment.
+  </p>
+
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>🏋️‍♀️ Certified Personal Trainers</li>
+    <li>📊 Tailored Fitness Plans</li>
+    <li>🧘‍♀️ Holistic Approach (Strength + Mindfulness)</li>
+    <li>📈 Progress Tracking & Weekly Reports</li>
+    <li>💬 24/7 Support via App & In-Person</li>
+  </ul>
+
+  <div class="stats">
+    <div class="stat">
+      <h3>500+</h3>
+      <p>Happy Members</p>
+    </div>
+    <div class="stat">
+      <h3>20+</h3>
+      <p>Certified Trainers</p>
+    </div>
+    <div class="stat">
+      <h3>5 Years</h3>
+      <p>Fitness Experience</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Client Satisfaction</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-columns">
+    <div class="footer-col">
+      <a href="about us fitness.html">About</a>
+      <a href="#">News</a>
+      <a href="#">Membership</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-col">
+      <a href="fitness classes.html">Classes</a>
+      <a href="Trainers.html">Trainers</a>
+      <a href="#">Nutrition</a>
+      <a href="#">Programs</a>
+    </div>
+    <div class="footer-col">
+      <a href="#">Learn</a>
+      <a href="#">Guides</a>
+      <a href="#">FAQs</a>
+
+
+      
